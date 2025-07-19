@@ -1,0 +1,133 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    background-color: #faf8f8;
+    font-family: "Darker Grotesque", sans-serif;
+    color: slategray;
+    font-size: larger;
+    
+    
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    background-color: white;
+    padding: 0 5%;
+}
+
+.navMenu{
+    height: 80px;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center ;
+    align-items: center;
+    align-content: center;
+    font-weight:bolder;
+    font-size: larger;
+    color: rgb(68, 98, 122);
+
+    
+}
+.header .logo{
+    height:80px;
+    margin: 0;
+}
+.navMenu > .menuItem{
+    
+    padding: 20px 20px;
+    border-radius: 10px;
+
+    align-content: center;
+    
+    /*
+    display: inline-block ;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    align-content: center;
+    */
+}
+.navMenu > .menuItem:hover{
+background-color: aliceblue;
+cursor: pointer;
+}
+.header > .menuGap{
+    flex-grow: 1;
+}
+
+.menuUser{
+    display: flex;
+    flex-flow: row-reverse;
+    height: 80px;
+    margin-right: 10px;
+}
+.menuUser > a{
+     width: 150px;
+     align-content: center;
+     justify-content: center;
+}
+ .button{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    color: dodgerblue;
+    font-weight:bolder;
+    font-size: large;
+
+}
+.menuUser .button{
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+    color: dodgerblue;
+
+}
+ a:hover{
+    cursor: pointer;
+}
+
+.main-content {
+    /* background-color: bisque; */
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;    
+    flex-basis: 50% 50%;
+
+}
+.main-content>.main-Content-Section{
+    padding: 0 5%;
+
+    flex-basis: 50% 50%;
+    /* background-color: azure; */
+    align-content: center;
+     text-align: justify;
+     justify-content:space-evenly ;
+     align-items: center;
+
+    
+
+}
+.textHighlight-1{
+    text-align: left;
+    font-size:55px;
+    font-weight: bold;
+    line-height: 60px;;
+
+}
+.highlightText{
+    color: dodgerblue;
+}
+
+.ServiceButton{
+    text-align: center;
+    background-color: dodgerblue;
+    color: white;
+    width: 200px;
+
+}
