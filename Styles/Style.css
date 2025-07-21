@@ -92,27 +92,6 @@ cursor: pointer;
     cursor: pointer;
 }
 
-.main-content {
-    /* background-color: bisque; */
-    padding: 0 5%;
-    display: flex;
-    flex-direction: row;    
-    flex-basis: 50% 50%;
-
-}
-.main-content>.main-Content-Section{
-    padding: 0 5%;
-
-    flex-basis: 50% 50%;
-    /* background-color: azure; */
-    align-content: center;
-     text-align: justify;
-     justify-content:space-evenly ;
-     align-items: center;
-
-    
-
-}
 .textHighlight-1{
     text-align: left;
     font-size:55px;
@@ -130,4 +109,38 @@ cursor: pointer;
     color: white;
     width: 200px;
 
+}
+@media(width <= 500px) {
+    .main-content>.main-Content-Section{
+        /* background-color: aqua; */
+    flex-basis:90vh 90vh;
+    }
+    .main-content {
+    padding: 0 5%;
+    flex-basis: 90vh 90vh;
+    flex-direction: column;    
+
+}
+}
+@media(width > 500px) {
+.main-content {
+    /* background-color: bisque; */
+    padding: 0 5%;
+    display: flex;
+    flex-direction: row;    
+    flex-basis: 50vh 50vh;
+
+}
+.main-content>.main-Content-Section{
+    padding: 0 5vh;
+    flex-basis: 50vh 50vh;
+    /* background-color: azure; */
+    align-content: center;
+     text-align: justify;
+     justify-content:space-evenly ;
+     align-items: center;
+
+    
+
+}
 }
